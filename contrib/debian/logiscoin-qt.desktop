@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=LogisCoin
+Comment=LogisCoin P2P Cryptocurrency
+Comment[fr]=LogisCoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=LogisCoin, eşten eşe kriptografik sanal para birimi
+Exec=logiscoin-qt %u
+Terminal=false
+Type=Application
+Icon=logiscoin128
+MimeType=x-scheme-handler/logiscoin;
+Categories=Office;Finance;
