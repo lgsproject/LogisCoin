@@ -21,7 +21,7 @@ static const int INIT_PROTO_VERSION = 209;
 static const int GETHEADERS_VERSION = 70077;
 
 //! disconnect from peers older than this proto version
-static const int MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT = 70912;
+static const int MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT = 70810;
 static const int MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT = 70914;
 
 //! masternodes older than this proto version use old strMessage format for mnannounce
@@ -41,4 +41,4 @@ static const int MEMPOOL_GD_VERSION = 60002;
 static const int NO_BLOOM_VERSION = 70005;
 
 
-#endif // BITCOIN_VERSION_H
+#endif // BITCOIN_VERSION_H 
