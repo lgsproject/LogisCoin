@@ -41,4 +41,4 @@ static const int MEMPOOL_GD_VERSION = 60002;
 static const int NO_BLOOM_VERSION = 70005;
 
 
-#endif // BITCOIN_VERSION_H 
+#endif // BITCOIN_VERSION_H
