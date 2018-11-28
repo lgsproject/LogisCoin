@@ -1,0 +1,26 @@
+[Unit]
+Description=LogisCoin's distributed currency daemon
+After=network.target
+
+[Service]
+User=logiscoin
+Group=logiscoin
+
+Type=forking
+PIDFile=/var/lib/logiscoind/logiscoind.pid
+
+ExecStart=/usr/bin/logiscoind -daemon -pid=/var/lib/logiscoind/logiscoind.pid \
+          -conf=/etc/logiscoin/logiscoin.conf -datadir=/var/lib/logiscoind
+
+ExecStop=-/usr/bin/logiscoin-cli -conf=/etc/logiscoin/logiscoin.conf \
+         -datadir=/var/lib/logiscoind stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
