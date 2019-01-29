@@ -1,0 +1,26 @@
+# /etc/conf.d/logiscoind: config file for /etc/init.d/logiscoind
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/logiscoin/logiscoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/logiscoind"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/logiscoind.pid"
+
+# Where to write logiscoind data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/logiscoind"
+
+# User and group to own logiscoind process
+#BITCOIND_USER="logiscoin"
+#BITCOIND_GROUP="logiscoin"
+
+# Path to logiscoind executable
+#BITCOIND_BIN="/usr/bin/logiscoind"
+
+# Nice value to run logiscoind under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""
